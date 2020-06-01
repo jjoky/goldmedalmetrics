@@ -38,7 +38,9 @@ Returns a SQL query string that will find the number of gold medals for the give
 */
 
 const goldMedalNumber = country => {
-    return;
+    return `SELECT COUNT(*)
+    FROM GoldMedal
+    WHERE country = '${country}'`;
 };
 
 /*
